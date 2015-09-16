@@ -1,6 +1,6 @@
 {
-    "name": "devdrops/silex-application",
-    "description": "A skeleton for Silex applications.",
+    "name": "devdrops/openshift-silex-application",
+    "description": "A Silex skeleton applied to OpenShift structure rules.",
     "license": "MIT",
     "authors": [
         {
