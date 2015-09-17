@@ -1,5 +1,7 @@
 <?php
 
+use Silex\Provider\MonologServiceProvider;
+
 /**
  * Project's settings.
  */
@@ -16,3 +18,8 @@ $app['db.options'] = [
     'user'     => 'database_user',
     'password' => 'database_password'
 ];
+
+$app->register(
+    new MonologServiceProvider(),
+    ['monolog.logfile' => __DIR__ . '/../logs/silex_app.log']
+);
