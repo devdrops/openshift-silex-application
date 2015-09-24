@@ -2,6 +2,9 @@
 #.openshift/action_hooks/deploy
 cd $OPENSHIFT_REPO_DIR
 
+# Installing Composer
+curl -sS https://getcomposer.org/installer | php
+
 # Composer installing dependencies
 composer install --no-dev --optimize-autoloader
 
