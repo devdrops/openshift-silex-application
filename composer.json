@@ -9,12 +9,13 @@
         }
     ],
     "require": {
-        "silex/silex": "@stable",
-        "twig/twig": "@stable",
-        "doctrine/dbal": "@stable"
+        "silex/silex": "v1.3.4",
+        "twig/twig": "v1.22.2",
+        "doctrine/dbal": "v2.5.2",
+        "monolog/monolog": "1.17.1"
     },
     "require-dev": {
-        "fzaninotto/faker": "@stable"
+        "fzaninotto/faker": "v1.5.0"
     },
     "autoload": {
         "psr-0": {
