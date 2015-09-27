@@ -5,6 +5,7 @@
  */
 
 use Silex\Provider\DoctrineServiceProvider;
+use Silex\Provider\MonologServiceProvider;
 use Silex\Provider\SessionServiceProvider;
 use Silex\Provider\TwigServiceProvider;
 use Symfony\Component\HttpFoundation\Response;
@@ -22,6 +23,11 @@ $app->register(
             'strict_variables' => true,
         ]
     ]
+);
+
+$app->register(
+    new MonologServiceProvider(),
+    ['monolog.logfile' => __DIR__ . '/../logs/silex_app.log']
 );
 
 $app->error(function (\Exception $e, $code) use ($app) {
