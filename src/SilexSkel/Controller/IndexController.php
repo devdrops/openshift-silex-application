@@ -13,6 +13,6 @@ class IndexController
 {
     public function indexAction(Request $request, Application $app)
     {
-        return new Response("DONE");
+        return new Response("<h1>Silex Skeleton Index Page, yay!</h1>");
     }
 }
